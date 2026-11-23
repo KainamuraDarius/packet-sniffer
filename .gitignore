@@ -1,8 +1,25 @@
+# Python / virtual environment
 .venv/
+venv/
 __pycache__/
 *.pyc
+*.egg-info/
+build/
+dist/
+
+# Tool caches
 .pytest_cache/
 .ruff_cache/
-*.egg-info/
+
+# Packet captures contain real network traffic: never commit them...
 *.pcap
 *.pcapng
+# ...except the sanitised sample made for the submission
+!submission-clean.pcap
+
+# Secrets, logs, editor and OS files
+.env
+*.log
+.vscode/
+.idea/
+.DS_Store
